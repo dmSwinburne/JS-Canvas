@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golf Game</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+            background-color: green;
+        }
+        #slider {
+            width: 200px;
+        }
+        #container {
+            display: flex;
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Golf Game</h1>
+    <canvas id="gameCanvas" width="600" height="600"></canvas>
+    <br>
+    <input id="slider" type="range" min="1" max="100" value="50">
+    <label for="slider">Power</label>
+    <br>
+    <div id="container">    
+        <button id="addObstacleButton">Add Obstacle</button>
+        <p id="numOfStrokes">Num of Stokes: 0</p>
+    </div>
+    <script type="module" src="game.js"></script>
+</body>
+</html>
